@@ -1,3 +1,9 @@
 List Of ToDo Tasks
-QR Codes stacked one above the other
 Choose a proper License for the PDF resume in order to allow distribution only for interview purposes
+QR Codes stacked one above the other
+Add nationality fontawesome icon
+Change the colour of the web references
+Include a header informing for the purpose of the two qr codes
+Implement Watermark on the main section to notify the holder under which license and the intended purpose of the resume
+Make the 3rd section second row first line bold to stand out
+Include a footer to inform how the pdf was created
