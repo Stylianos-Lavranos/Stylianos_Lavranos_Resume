@@ -70,7 +70,7 @@
 %Information As They Are Visually Presented%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\profilepic}[1]{\renewcommand{\givenprofilepic}{#1}}
-\newcommand{\liqr}[1]{\renewcommand{\liqr}{#1}}
+\newcommand{\liqr}[1]{\renewcommand{\givenliqr}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\givencvname}{#1}}
 \newcommand{\cvjobtitle}[1]{\renewcommand{\givencvjobtitle}{#1}}
 \newcommand{\cvdate}[1]{\renewcommand{\givencvdate}{#1}}
@@ -163,7 +163,7 @@
 
 \vspace{-110pt}
 \hspace{135pt}
-\includegraphics[width=40pt]{liqr}
+\includegraphics[width=40pt]{\givenliqr}
 
 \vspace{5pt}
 \hspace{135pt}
@@ -192,6 +192,7 @@
 \ifthenelse{\equal{\givencvdriverslicense}{}}{}{\textsc{\normalsize\icon{\faCar}} & \large\givencvdriverslicense\\}
 \ifthenelse{\equal{\givencvmilitary}{}}{}{\textsc{\large\icon{\faFighterJet}} & \large\givencvmilitary\\}
 \ifthenelse{\equal{\givencvmail}{}}{}{\textsc{\Large\icon{@}} & \href{mailto:\givencvmail}{\large\givencvmail}\\}
+\ifthenelse{\equal{\givencvsite}{}}{}{\textsc{\Large\icon{\faGlobe}} & \href{\givencvsite}{\large\givencvsite}\\}
 \ifthenelse{\equal{\givencvgithub}{}}{}{\textsc{\large\icon{\faGithub}} & \normalsize\href{https://\givencvgithub }{\large\givencvgithub}\\}
 \ifthenelse{\equal{\givenlinkedin}{}}{}{\textsc{\large\icon{\faLinkedin}} & \large\href{https://www.linkedin.com/in/stylianos-l-534186129}{\large\givenlinkedin}\\}
 \end{tabular}
